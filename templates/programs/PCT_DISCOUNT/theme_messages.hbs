@@ -35,13 +35,13 @@
       redirectUrl: 'http://app.referralsaasquatch.com/widget/close'
     },
     twitter: {
-      message: '{{urlencode (i18n "twitterMsg" companyName (math (math programDetails.referredRewardDetails.discountPercent ' / 100') '*' (i18n 1 bundle="i18n/messages")) user.referralCode bundle="i18n/messages") }}'
+      message: '{{urlencode (i18n "twitterMsg" companyName (math (math programDetails.referredRewardDetails.discountPercent ' / 100') '*' (i18n "conversionRate" bundle="i18n/messages")) user.referralCode bundle="i18n/messages") }}'
     },
     mobile: {
       sharelink: '{{shareLinks.shareLink}}',
       emailBody: '{{urlencode (stringFormat "Sign up for a %s account and we both get %s%% off our monthly bill. Use this link %s" companyName programDetails.referredRewardDetails.discountPercent shareLinks.mobileEmailShareLink)}}',
       facebookBody: '{{urlencode (stringFormat "Sign up for a %s account and we both get %s%% off our monthly bill. Use this link %s" companyName programDetails.referredRewardDetails.discountPercent shareLinks.mobileFacebookShareLink)}}',
-      twitterBody: '{{urlencode (i18n "twitterMsg" companyName (math (math programDetails.referredRewardDetails.discountPercent ' / 100') '*' (i18n 1 bundle="i18n/messages")) user.referralCode bundle="i18n/messages") }}',
+      twitterBody: '{{urlencode (i18n "twitterMsg" companyName (math (math programDetails.referredRewardDetails.discountPercent ' / 100') '*' (i18n "conversionRate" bundle="i18n/messages")) user.referralCode bundle="i18n/messages") }}',
       twitterShareLink: '{{shareLinks.mobileTwitterShareLink}}',
       facebookShareLink: '{{shareLinks.mobileFacebookShareLink}}',
       emailShareLink: '{{shareLinks.mobileEmailShareLink}}'
