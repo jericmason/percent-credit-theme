@@ -102,6 +102,17 @@
             "validate": ["handlebars"]
           }
         },
+        "testProperty" : {
+          "type": "string",
+          "minLength": 1,
+          "format": "markdown",
+          "title": "Test Property:",
+          "default" : "A test property.",
+          "options": {
+            "input_height": "100px",
+            "validate": ["handlebars"]
+          }
+        },
         "shareCodeDetails": {
           "type": "string",
           "format": "markdown",
